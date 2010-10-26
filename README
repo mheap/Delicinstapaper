@@ -1,0 +1,23 @@
+README
+================
+
+Delicinstapaper checks your Delicious inbox (any links tagged for:your_username) and automatically imports them into instapaper.
+
+It is designed to be run from the command line (via cron), but may be adapted to run as a webpage too.
+
+
+GETTING STARTED
+================
+
+You will both an instapaper account and a delicious account. First, login to your delicious account and scroll down to the bottom of your user page (http://delicious.com/your_username) and look for "Private RSS Feed". Click on the link and copy the URL. You will need your username and the private key out of the URL. Copy and paste them into the corresponding variables at the top of delicinstapaper.php.
+
+You will also need to provide a username and password for the instapaper account that you would like the items to be added to.
+
+By default the script is limited to the most recent 10 items. If you would like to increase this number, you can change $itemCount at the top of the script.
+
+Example Usage
+================
+
+$ cd delicinstapaper
+$ chmod +x delicinstapaper
+$ ./delicinstapaper
